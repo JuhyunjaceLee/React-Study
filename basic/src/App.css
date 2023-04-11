@@ -1,0 +1,61 @@
+.profile {
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.42);
+}
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.avartar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.btnNew {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: dodgerblue;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(215, 127, 12);
+}
+.counter:hover {
+  background-color: rgb(246, 243, 197);
+}
+.number {
+  font-size: 7rem;
+}
+.button {
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(215, 127, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 127, 12, 1) 0%,
+    rgba(253, 220, 29, 1) 100%
+  );
+}
