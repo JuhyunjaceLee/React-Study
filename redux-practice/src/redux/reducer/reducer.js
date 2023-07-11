@@ -4,8 +4,11 @@ let intialState = {
 
 function reducer(state = intialState, action) {
   console.log("action:", action);
-  if (action.type === "DECREASEMENT") {
-    return { ...state, count: state.count + 1 };
+  switch (action.type) {
+    case "DECREASEMENT":
+      return { ...state, count: state.count - 1 };
+    default:
+      return { ...state };
   }
 }
 

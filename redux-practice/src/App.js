@@ -1,26 +1,24 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+// import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const dispatch = useDispatch();
+  const count = useSelector((state) => state.count);
 
   const decreaseHandle = () => {
     dispatch({ type: "DECREASEMENT" });
-    setCount((prev) => prev - 1);
   };
 
-  const increaseHandle = () => {
-    setCount((prev) => prev + 1);
-  };
+  // const increaseHandle = () => {
+  //   setCount((prev) => prev + 1);
+  // };
 
   return (
     <div style={{ fontSize: "36px" }}>
       <button onClick={decreaseHandle}>-</button>
       <span>{count}</span>
-      <button onClick={increaseHandle}>+</button>
+      {/* <button onClick={increaseHandle}>+</button> */}
     </div>
   );
 }
