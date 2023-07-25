@@ -1,20 +1,24 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 
-export default function ContactItem({ item }) {
+const ContactItem = ({ item }) => {
   return (
-    <Row>
-      <Col lg={2}>
-        <img
-          width={50}
-          src="https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
-          alt="user-img"
-        />
-      </Col>
-      <Col lg={10}>
-        <div>{item.name}</div>
-        <div>{item.phoneNumber}</div>
-      </Col>
-    </Row>
+    <div className="contact-item">
+      <Row>
+        <Col lg="2">
+          <img
+            width={50}
+            className="profile"
+            src="https://s3-ap-northeast-1.amazonaws.com/ojuz-attach/profile/images/GioChkhaidze"
+          />
+        </Col>
+        <Col lg="10">
+          <h4>{item.name}</h4>
+          <p>{item.phoneNumber}</p>
+        </Col>
+      </Row>
+    </div>
   );
-}
+};
+
+export default ContactItem;
